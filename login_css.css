@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: sans-serif;
+    background: url("https://static3.depositphotos.com/1003631/209/i/950/depositphotos_2099183-stock-photo-fine-table-setting-in-gourmet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 400px;
+    background-color: mistyrose;
+    opacity: .9;
+}
+.container .header .img-holder .img-circle{
+    border: solid 2px dodgerblue;
+    border-radius: 50%;
+}
+.container .header .img-holder img{
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: 15px auto;
+}
+.container .header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 10px 0px 30px;
+    color: #8e44ad;
+}
+.container .form_container{
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.container .form_container form input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 2px;
+    margin-bottom: 45px;
+    font-size: 15pt;
+    border: none;
+    outline: none;
+}
+.container .form_container form div input[type="text"], .container .form_container form div input[type="password"]{
+    border-bottom: solid 3px orangered;
+    background-color: transparent;
+}
+.container .form_container form div{
+    position: relative;
+}
+.container .form_container form div label{
+    font-size: 15pt;
+    font-weight: bolder;
+    padding: 8px 2px;
+    position: absolute;
+    top: 3pt;
+    left: 0px;
+    transition: .4s;
+    pointer-events: none;
+}
+.container .form_container form div input[type="text"]:focus ~ label, .container .form_container form div input[type="text"]:valid ~ label,
+.container .form_container form div input[type="password"]:focus ~ label, .container .form_container form div input[type="password"]:valid ~ label
+{
+    top: -20pt;
+    font-weight: normal;
+    color: blue;
+    transition: .8s;
+}
+.container .form_container form div input[type="text"]:focus, .container .form_container form div input[type="text"]:valid,
+.container .form_container form div input[type="password"]:focus, .container .form_container form div input[type="password"]:valid
+{
+    border-bottom: solid 4px deeppink;
+}
+.container .form_container form div input[type="submit"]{
+    border-radius: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.container .form_container form div input[type="submit"]:first-child{
+    background-color: rgb(5, 94, 5);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 2px;
+}
+.container .forgot_password p {
+    padding: 10px 20px;
+    font-size: 17pt;
+}
+.container .forgot_password p a{
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+}
